@@ -1,16 +1,128 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     font-size: 62.5%;
     /* Mặc định font-size ở html là 16px
                 khi đổi 62,5 thì sẽ thành 10px => 1 rem = 10px */
 }
+
+body {
+    background-image: linear-gradient(white, white, #b597c880, white, white, #b597c880);
+}
+
 /* Header */
 /* End Header */
 /* Selection 1 */
+.selection {
+    margin-top: 100px;
+}
+
+.selection-1 {
+    display: block;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+
+.heading {
+    width: 100%;
+    font-size: 4.2rem;
+    color: #4b0082;
+    font-weight: bold;
+    font-family: Lora;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.selec1_heading::after {
+    content: "";
+    height: 4px;
+    width: 400px;
+    background-color: #bbb0c9;
+    display: block;
+    margin: 15px auto 0 auto;
+}
+
+.selec1_body {
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.selec1_bg-image{
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    z-index: 0;
+    right: -200px;
+    top: 0;
+    opacity: 0.4;
+}
+.selec1_body_item {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.selec1_bd_item_image-box {
+    width: 350px;
+    height: 350px;
+    border-radius: 35px;
+    position: relative;
+}
+.selec1_bd_item_image-box::after{
+    position: absolute;
+    content:"";
+    background-image:linear-gradient(white,transparent,transparent,white);
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    border-radius:35px;
+}
+.selec1_bd_item_image{
+    width: 100%;
+    height: 100%;
+    border-radius:35px
+}
+.selec1_bd_item_text-box{
+    width: 650px;
+}
+.text-box_heading {
+    font-size: 6rem;
+    color: #78489c;
+    font-family: Pacifico;
+    text-align: right;
+    word-spacing: 15px;
+}
+
+.text-box_sub-heading {
+    margin-top: 5px;
+    font-size: 2rem;
+    color: #737373;
+    font-family: Lora;
+    font-weight: bold;
+    text-align: right;
+}
+
+.text-box_main-text {
+    margin-top: 30px;
+    font-size: 2.2rem;
+    font-family: Roboto;
+    text-align: justify;
+    line-height: 1.8;
+}
+.left{
+    text-align: left;
+}
 /* End Selection 1 */
 /* Selection 2 */
 /* End Selection 2 */
