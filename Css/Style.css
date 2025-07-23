@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    /* Mặc định font-size ở html là 16px
+                khi đổi 62,5 thì sẽ thành 10px => 1 rem = 10px */
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 600px;
+    background-image: url('/Assest/Images/Background.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+.full-container.navbar-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 10;
+    padding: 16px 0;
+}  
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    
+}
+
+/* Header */
+.navbar {
+    background-color: #f0ece4;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0 ,0 ,0.3);
+    display: none;
+  }
+.overlay.show{
+    display: block;
+}
+
+.menu {
+    display: flex;
+    width: 1200px;
+    height: 50px;
+    align-items: center;
+}
+
+.menu-logo {
+    height: 50px;
+    width: 25%;
+    margin-left: 10px;
+}
+
+.menu-logo img {
+    width: 50px;
+}
+
+.nav {
+    display: flex;
+
+    gap: 50px;
+    width: 50%;
+    max-height: 50px;
+}
+
+.nav-list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 0 20px 0 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 1.5rem;
+} 
+
+.nav .nav-link:hover {
+    color: #ffcc00;
+}
+
+.btn-feedback {
+    width: 25%;
+    text-align: center;
+}
+.btn-feedback button{
+    background-color: #ff5f5f;
+    color: #fff;
+    border: none;
+    padding: 10px 0 10px 0;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+    
+    width: 150px;
+    max-height: 50px;
+}
+
+.btn-feedback button:hover {
+    background-color: #e84949;
+}
+
+/*************/
+.menu-right {
+    display: none;
+}
+.btn-feedback-responsive {
+    text-align: center;
+}
+.btn-feedback-responsive button{
+    background-color: #ff5f5f;
+    color: #fff;
+    border: none;
+    padding: 10px 0 10px 0;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+    width: 100%;
+    max-height: 50px;
+}
+.btn-feedback-responsive button:hover {
+    background-color: #e84949;
+}
+.menu-logo-responsive {
+    height: 50px;
+    width: 200px;
+    display: none;
+}
+.menu-logo-responsive img {
+    width: 50px;
+}
+
+.nav-responsive {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;  
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+    display: none;  
+}
+.nav-responsive.active {
+    transform: translateX(0%);
+}
+.nav-responsive-list {
+    margin-top: 24px;
+    padding-left: 30px;
+}
+.nav-responsive-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.0rem;
+}
+.close-menu {
+    width: 28px;
+    height: 28px;
+    color: red;
+    position: absolute;
+    top: 0.4rem;
+    right : 10px;
+    font-size: 1.6rem;
+}
+.close-menu:hover {
+  transform: scale(1.2);     /* Phóng to nhẹ khi hover */
+  opacity: 0.7;              /* Làm mờ nhẹ */
+}
+/*Menu cua DT va Tablet*/
+@media (min-width : 768px) and (max-width : 1024px) {
+    
+}
+@media (max-width : 575px) {
+    .menu {
+        display: none;
+    }
+    .nav-responsive {
+        display: block;
+    }
+    .menu-logo-responsive {
+        display: block;
+        width: 50%;
+        margin-left: 10px;
+    }
+    .menu-right {
+        display: flex;
+    
+        width: 50%;
+        margin-top: 6px;
+    }
+    .btn-feedback-responsive {
+        width: 50%;
+    }
+    .border{
+        border: #333 solid 2px;
+        margin-bottom: 7px;
+        margin-left: 2px;
+    }
+    .logo_icon {
+        display: flex;
+        justify-content: center;
+
+        width: 50%;     
+    }
+    .hues-logo img{
+      width: 30px;
+      
+    }
+    .hamburger-menu {
+        font-size: 30px;
+        width: 50px;
+        padding-left: 10px;
+        
+    }
+}
+
+/* End Header */
+/* Selection 1 */
+/* End Selection 1 */
+/* Selection 2 */
+/* End Selection 2 */
+/* Selection 3 */
+/* End Selection 3 */
+/* Selection 4 */
+/* End Selection 4 */
+/* Selection 5 */
+/* End Selection 5 */
+/* Selection 6 */
+/* End Selection 6 */
+/* Selection 7 */
+/* End Selection 7 */
+/* Footer */
+/* End Footer */

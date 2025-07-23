@@ -4,12 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Huế Có Chi </title>
 </head>
 
 <body>
     <!-- Header -->
+
+    <section class="banner"></section> <!--Banner-->
+
+    <header class="full-container navbar-overlay">
+        <div class="container navbar">
+            <div class="overlay"></div> <!--lớp phủ-->
+
+            <div class="menu">
+                <a href="#" class="menu-logo"><img src="/Assest/Images/Logo.jpg" alt=""></a>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link">TRANG CHỦ</a></li>
+                        <li><a href="#" class="nav-link">GIỚI THIỆU</a></li>
+                        <li><a href="#" class="nav-link">VĂN HOÁ</a></li>
+                        <li><a href="#" class="nav-link">SỰ KIỆN</a></li>
+                    </ul>
+                </nav> 
+
+                <div class="btn-feedback"><button >GÓP Ý +</button></div>
+            </div>
+
+            <!--Responsive cho MOBILE VÀ TABLET -->
+            <a href="#" class="menu-logo-responsive"><img src="/Assest/Images/Logo.jpg" alt=""></a>
+
+            <div class="menu-right">
+                <div class="btn-feedback-responsive"><button >GÓP Ý +</button></div>
+                <div class="border"></div>
+                <div class="logo_icon">
+                    <a href="#" class="hues-logo"><img src="/Assest/Images/Logo_hues.png" alt=""></a>
+                    <div class="hamburger-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="nav-responsive">
+                <div class="close-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul class="nav-responsive-list">
+                    <li><a href="#" class="nav-responsive-link">TRANG CHỦ</a></li>
+                    <li><a href="#" class="nav-responsive-link">GIỚI THIỆU</a></li>
+                    <li><a href="#" class="nav-responsive-link">VĂN HOÁ</a></li>
+                    <li><a href="#" class="nav-responsive-link">SỰ KIỆN</a></li>
+                </ul>
+            </nav> 
+            
+            <!--*******-->
+        </div>
+    </header>
+
+    <!--SCRIPT CUA HEADER-->
+ <script>
+  const hamburger = document.querySelector('.hamburger-menu');
+  const navMobile = document.querySelector('.nav-responsive');
+  const overlay = document.querySelector('.overlay');
+  const closeBtn = document.querySelector('.close-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMobile.classList.toggle('active');
+    overlay.classList.toggle('show')
+  });
+
+  closeBtn.addEventListener('click', () => {
+    navMobile.classList.remove('active');
+    overlay.classList.remove('show');
+  });
+
+  overlay.addEventListener('click', () => {
+    navMobile.classList.remove('active');
+    overlay.classList.remove('show');
+  });
+</script>
+
     <!-- End Header -->
+
     <!-- Selection 1 -->
     <!-- End Selection 1 -->
     <!-- Selection 2 -->
