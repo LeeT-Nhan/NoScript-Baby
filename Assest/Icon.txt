@@ -1,0 +1,29 @@
+/*Dấu 3 gạch menu*/
+<i class="fa-solid fa-bars"></i>
+link lk:  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+/*Dấu x tắt menu*/
+<i class="fa-solid fa-xmark"></i>
+
+/* icon map*/
+<i class="fa-solid fa-map"></i>
+
+/*icon vị trí*/
+<i class="fa-solid fa-location-dot"></i>
+
+/*icon điện thoại*/
+<i class="fa-solid fa-phone"></i>
+
+/*icon gmail*/
+<i class="fa-solid fa-envelope"></i>
+
+/*facebook*/
+<i class="fa-brands fa-square-facebook"></i>
+
+/*insta*/
+<i class="fa-brands fa-square-instagram"></i>
+
+/*twitter*/
+<i class="fa-brands fa-square-twitter"></i>
+
+/*youtube*/
+<i class="fa-brands fa-square-youtube"></i>
