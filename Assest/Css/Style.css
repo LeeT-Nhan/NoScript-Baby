@@ -366,7 +366,7 @@ body {
 
 .selec3_body_it_text-box {
     position: absolute;
-    background-color: white;
+    background-color: rgb(255, 255, 255,0.9);
     top: 0;
     left: 0;
     height: 100%;
@@ -374,7 +374,6 @@ body {
     transform: translateY(290px);
     transition: transform 0.25s ease-out;
 }
-
 .selec3_body_item:hover .selec3_body_it_text-box {
     transform: translateY(0);
 }
