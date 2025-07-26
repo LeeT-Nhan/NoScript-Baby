@@ -58,6 +58,11 @@ body {
     justify-content: space-between;
 }
 
+.selec1_body:hover> :not(:hover) {
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
 .selec1_bg-image {
     position: absolute;
     width: 1000px;
@@ -68,11 +73,20 @@ body {
     opacity: 0.4;
 }
 
+.selec1_body:hover>.selec1_bg-image {
+    transform: scale(1);
+}
+
 .selec1_body_item {
     z-index: 1;
     display: flex;
     justify-content: space-between;
     gap: 200px;
+    transition: all 0.3s linear;
+}
+
+.selec1_body_item:hover {
+    transform: scale(1.1);
 }
 
 .selec1_bd_item_image-box {
@@ -131,6 +145,7 @@ body {
 .left {
     text-align: left;
 }
+/*Respon tablet <1024*/
 
 /* End Selection 1 */
 /* Selection 2 */
@@ -142,6 +157,11 @@ body {
     gap: 60px;
 }
 
+.selection2:hover> :not(:hover) {
+    transform: scale(0.95);
+    opacity: 0.5;
+}
+
 .selec2_text-box,
 .selec2_form {
     width: 100%;
@@ -149,6 +169,12 @@ body {
 
 .selec2_text-box {
     padding: 40px 0;
+    transition: all 0.3s linear;
+}
+
+.selec2_text-box:hover,
+.selec2_form:hover {
+    transform: scale(1.05);
 }
 
 .selec2_text-box_heading {
@@ -191,6 +217,12 @@ body {
     justify-content: space-between;
     max-height: 807px;
     gap: 40px;
+    transition: all 0.3s linear;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+.selec2_form:hover {
+    box-shadow: 16px 16px 8px rgba(0, 0, 0, 0.5);
 }
 
 .selec2_form-bg {
@@ -341,7 +373,8 @@ body {
     position: relative;
     overflow: hidden;
     height: 420px;
-    transition: transform 0.1s linear;
+    transition: all 0.1s linear;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
 }
 
 .selec3_body_it_image {
@@ -366,7 +399,7 @@ body {
 
 .selec3_body_it_text-box {
     position: absolute;
-    background-color: rgb(255, 255, 255,0.9);
+    background-color: rgb(255, 255, 255, 0.9);
     top: 0;
     left: 0;
     height: 100%;
@@ -374,18 +407,21 @@ body {
     transform: translateY(290px);
     transition: transform 0.25s ease-out;
 }
+
 .selec3_body_item:hover .selec3_body_it_text-box {
     transform: translateY(0);
 }
 
 .selec3_body_item:hover {
     transform: scale(1.1);
-
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
 }
+
 
 .selec3_body:hover> :not(:hover) {
     transform: scale(0.95);
     opacity: 0.7;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .selec3_bd_it_text-box_heading {
