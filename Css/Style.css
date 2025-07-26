@@ -445,10 +445,7 @@ margin-top: 50px;
 }
 /*Menu cua Tablet*/
 @media (min-width : 815px) and (max-width : 1024px) {
-.events {
-    justify-content: center;
-    gap: 20px;
-  }
+
 
   .shell {
     width: 30%;
@@ -500,9 +497,12 @@ margin-top: 50px;
 
 /*DT*/
 @media (max-width : 432px) {
-    .events {
+    .events-shell {
         justify-content: center;
         
+    }
+    .shell {
+        margin-bottom: 20px;
     }
 }
 /* End Selection 7 */
