@@ -181,7 +181,7 @@ body {
     .selection-1 {
         width: 690px;
     }
-    .selec1_heading{
+    .heading{
         font-size: 3.6rem;
     }
     .selec1_body_item {
@@ -215,7 +215,7 @@ body {
     .selection-1 {
         width: 340px;
     }
-    .selec1_heading{
+    .heading{
         font-size: 1.6rem;
     }
     .selec1_heading::after{
@@ -573,6 +573,11 @@ body {
     .selec2_form_input{
         gap: 10px;
     }
+    .input-box::placeholder,
+    .placeholder,
+    .date-box {
+       font-size: 1rem;
+    }
     .form_button{
         width: 100%;
     }
@@ -687,15 +692,45 @@ body {
 
 /*Respon tablet <=1024*/
 @media  (max-width:1024px) and (min-width:816px) {
-    
+    .selection3{
+        width: 750px;
+    }
+    .selec3_body{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .selec3_body_item{
+        width: 355px;
+    }
 }
 /* Respon mini-tablet */
 @media (max-width:815px) and (min-width:451px){
-   
+    .selection3{
+        width: 690px;
+    }
+    .selec3_body{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .selec3_body_item{
+        width:330px;
+    }
 }
 /*Respon mobile*/
 @media (max-width:451px){
-   
+    .selection3{
+        width: 340px;
+    }
+    .selec3_body{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        align-items:center;
+    }
+    .selec3_body_item{
+        width:330px;
+    }
+    
 }
 
 /* End Selection 3 */
