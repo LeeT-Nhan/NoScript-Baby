@@ -37,7 +37,7 @@ body {
 .banner {
     width: 100%;
     height: 600px;
-    background-image: url('/Assest/Images/Background.gif');
+    background-image: url('../Images/Background.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
