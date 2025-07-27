@@ -1,9 +1,10 @@
+link lk:  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 /*Dấu 3 gạch menu*/
 <i class="fa-solid fa-bars"></i>
-link lk:  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 /*Dấu x tắt menu*/
 <i class="fa-solid fa-xmark"></i>
-
+/*Icon lich*/
+<i class="fa-solid fa-calendar"></i>
 /* icon map*/
 <i class="fa-solid fa-map"></i>
 
