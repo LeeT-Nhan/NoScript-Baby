@@ -22,8 +22,7 @@
 
     <header class="full-container navbar-overlay">
         <div class="container navbar">
-            <div class="overlay"></div> <!--lớp phủ-->
-
+            
             <div class="menu">
                 <a href="#" class="menu-logo"><img src="/Assest/Images/Logo.jpg" alt=""></a>
 
@@ -47,16 +46,20 @@
                 <div class="border"></div>
                 <div class="logo_icon">
                     <a href="#" class="hues-logo"><img src="/Assest/Images/Logo_hues.png" alt=""></a>
-                    <div class="hamburger-menu">
+                    <label for="nav-toggle" class="hamburger-menu">
                         <i class="fa-solid fa-bars"></i>
-                    </div>
+                    </label>
                 </div>
             </div>
             
+
+
+            <input type="checkbox" hidden id="nav-toggle" class="nav-input">
+            <label for="nav-toggle" class="overlay"></label> <!--lớp phủ-->
             <nav class="nav-responsive">
-                <div class="close-menu">
+                <label for="nav-toggle" class="close-menu">
                     <i class="fa-solid fa-xmark"></i>
-                </div>
+                </label>
                 <ul class="nav-responsive-list">
                     <li><a href="#" class="nav-responsive-link">TRANG CHỦ</a></li>
                     <li><a href="#" class="nav-responsive-link">GIỚI THIỆU</a></li>
@@ -70,7 +73,7 @@
     </header>
 
     <!--SCRIPT CUA HEADER-->
- <script>
+ <!-- <script>
   const hamburger = document.querySelector('.hamburger-menu');
   const navMobile = document.querySelector('.nav-responsive');
   const overlay = document.querySelector('.overlay');
@@ -90,7 +93,7 @@
     navMobile.classList.remove('active');
     overlay.classList.remove('show');
   });
-</script>
+</script> -->
 
     <!-- End Header -->
 

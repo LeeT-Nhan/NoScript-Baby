@@ -65,18 +65,6 @@ body {
     
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0, 0 ,0 ,0.3);
-    display: none;
-  }
-.overlay.show{
-    display: block;
-}
 
 .menu {
     display: flex;
@@ -198,6 +186,18 @@ body {
 
 
 
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0 ,0 ,0.3);
+    display: none;
+}
+.nav-input:checked ~ .overlay {
+    display: block;
+}
 
 .nav-responsive {
     position: fixed;
@@ -212,9 +212,10 @@ body {
     z-index: 100;
     display: none;  
 }
-.nav-responsive.active {
-    transform: translateX(0%);
+.nav-input:checked ~ .nav-responsive {
+  transform: translateX(0%);
 }
+
 .nav-responsive-list {
     margin-top: 24px;
     padding-left: 30px;
