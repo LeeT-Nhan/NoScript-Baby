@@ -92,7 +92,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(90deg ,transparent,#ff6ec7, #4c74d9, #00e0ff,transparent);
+    background-image: linear-gradient(90deg, transparent, #ff6ec7, #4c74d9, #00e0ff, transparent);
     top: 0;
     left: 0;
     transform: scale(0);
@@ -293,8 +293,8 @@ body {
         width: 120px;
     }
 
-    .hues-logo img{
-        width: 30px; 
+    .hues-logo img {
+        width: 30px;
 
         height: auto;
     }
@@ -374,10 +374,10 @@ body {
         position: relative;
     }
 
-    .container{
+    .container {
         width: 340px;
-        background-color:#f0ece4;
-        border-radius:35px;
+        background-color: #f0ece4;
+        border-radius: 35px;
 
         top: 5px;
         height: 40px;
@@ -702,10 +702,11 @@ body {
 @media (max-width:451px) {
     .selection-1 {
         width: 340px;
+        margin-top: 60px;
     }
 
     .heading {
-        font-size: 1.6rem;
+        font-size: 2.2rem;
     }
 
     .selec1_heading::after {
@@ -713,7 +714,7 @@ body {
     }
 
     .selec1_body {
-        margin-top: 40px;
+        margin-top: 20px;
         padding: 20px;
     }
 
@@ -1063,18 +1064,16 @@ body {
 /*Respon mobile*/
 @media (max-width:451px) {
     .selection2 {
-        margin-top: 60px;
+        margin-top: 20px;
         width: 340px;
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-
     .selec2_text-box,
     .selec2_form {
         width: 100%;
     }
-
     .selec2_text-box_heading {
         font-size: 2rem;
     }
@@ -1261,6 +1260,7 @@ body {
 @media (max-width:451px) {
     .selection3 {
         width: 340px;
+        margin-top: 60px;
     }
 
     .selec3_heading::after {
@@ -1268,6 +1268,7 @@ body {
     }
 
     .selec3_body {
+        margin-top: 40px;
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
@@ -1292,40 +1293,22 @@ body {
 
 
 .events {
-
-  width: 1400px;
-  margin: 0 auto;
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-
+    width: 1400px;
+    margin: auto;
+    margin-top: 100px;
 }
 
-.events-heading {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.events-heading p:first-child {
-    font-size: 2.4rem;
-    font-weight: bold;
-    color: #78489c;
-    margin-bottom: 10px;
-    /* Cách gạch chân */
-    position: relative;
-    display: inline-block;
-}
-
-.events-heading-underline {
-    width: 5%;
-    /* Bằng khoảng 1/2 heading */
-    height: 3px;
-    background-color: gray;
-    margin: 0 auto;
-    border-radius: 2px;
+.selec7_heading::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 200px;
+    background-color: #bbb0c9;
+    margin: 15px auto 0 auto;
 }
 
 .events-shell {
+    margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1334,10 +1317,9 @@ body {
 /* Khung mỗi thẻ */
 .shell {
 
-  width: 17%;
-  height: 300px;
-  perspective: 1000px;
-
+    width: 18%;
+    height: 300px;
+    perspective: 1000px;
 }
 
 /* Phần lật */
@@ -1355,17 +1337,18 @@ body {
 }
 
 
-.front, .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 35px;
-  backface-visibility: hidden;
-  top: 0;
-  left: 0;
-  background-color: white;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  overflow: hidden;
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 
 }
 
@@ -1400,45 +1383,46 @@ body {
 
 /* Nội dung mặt trước */
 .shell-content {
-
-    text-align: center; 
-
-
+    text-align: center;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .shell_heading {
-
-  font-weight: bold;
-  font-size: 2rem;
-  color: #78489c;
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: #78489c;
+    font-weight: lora;
 
 }
 
 .shell_sch {
-    font-size: 14px;
-    color: gray;
+    font-size: 1.8rem;
+    color: #737373;
+    margin-top: 20px;
+    font-family: roboto;
 }
 
 /* Mặt sau */
 .shell-heading-back {
 
-  font-weight: bold;
-  font-size: 2rem;
-  color: #78489c;
-  padding: 10px;
-  margin-top: 20px;
-  text-align: center;
-
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: #78489c;
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: lora;
 }
 
 .shell-text {
+    margin-top: 15px;
     font-weight: bold;
     font-size: 17px;
-    padding: 0 10px;
+    padding: 0 20px;
     color: #444;
-    text-align: center;
+    text-align: justify;
+    font-family: roboto;
 }
 
 /* Tablet*/
@@ -1446,30 +1430,57 @@ body {
 
     .events {
         width: 750px;
-        margin: 0 auto;
-        margin-top: 100px;
         height: auto;
     }
-  .shell {
-    width: 30%;
-    margin-bottom: 20px;
-  }
 
+    .events-shell {
+        gap: 20px;
+    }
+
+    .shell {
+        width: 31%;
+    }
 
     /* Chỉnh riêng 2 shell cuối (thẻ 4 và 5) canh giữa */
     .shell:nth-child(4),
     .shell:nth-child(5) {
-        width: 40%;
+        width: 48%;
+        height: 400px;
         /* hoặc 45% nếu muốn lớn hơn */
     }
 
-    .shell:nth-child(4) {
-        margin-right: 5%;
+    .shell:nth-child(4) img,
+    .shell:nth-child(5) img {
+        height: 200px;
     }
 
-    .shell:nth-child(5) {
-        margin-left: 5%;
+    .shell-heading-back,
+    .shell_heading {
+        font-size: 2rem;
     }
+    .shell-text{
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+    .shell:nth-child(4) .shell_heading,
+    .shell:nth-child(5) .shell_heading {
+        font-size: 2.6rem;
+    }
+    .shell:nth-child(4) .shell-heading-back,
+    .shell:nth-child(5) .shell-heading-back {
+        font-size: 2.6rem;
+    }
+
+    .shell:nth-child(4) .shell_sch,
+    .shell:nth-child(5) .shell_sch{
+        font-size: 2rem;
+    }
+    .shell:nth-child(4) .shell-text,
+    .shell:nth-child(5) .shell-text{
+        font-size: 2.4rem;
+        line-height: 1.6;
+    }
+
 }
 
 /*MINI TABLET*/
@@ -1477,58 +1488,97 @@ body {
 
 @media (min-width: 433px) and (max-width: 814px) {
 
-  .events {
-    width: 690px;
-  }
+    .events {
+        width: 690px;
+        height: auto;
+    }
 
+    .events-shell {
+        gap: 20px;
+    }
 
     .shell {
-        width: 30%;
-        margin-bottom: 20px;
+        width: 31%;
     }
 
     /* Chỉnh riêng 2 shell cuối (thẻ 4 và 5) canh giữa */
     .shell:nth-child(4),
     .shell:nth-child(5) {
-        width: 40%;
+        width: 48%;
+        height: 400px;
         /* hoặc 45% nếu muốn lớn hơn */
     }
-
-    .shell:nth-child(4) {
-        margin-right: 5%;
+    .shell:nth-child(4) img,
+    .shell:nth-child(5) img {
+        height: 200px;
+    }
+    .shell-heading-back,
+    .shell_heading {
+        font-size: 1.8rem;
+    }
+    .shell-text{
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+    .shell:nth-child(4) .shell_heading,
+    .shell:nth-child(5) .shell_heading {
+        font-size: 2.6rem;
+        margin-top: 20px;
+    }
+    .shell:nth-child(4) .shell-heading-back,
+    .shell:nth-child(5) .shell-heading-back {
+        font-size: 2.6rem;
     }
 
-    .shell:nth-child(5) {
-        margin-left: 5%;
+    .shell:nth-child(4) .shell_sch,
+    .shell:nth-child(5) .shell_sch{
+        font-size: 2rem;
     }
+    .shell:nth-child(4) .shell-text,
+    .shell:nth-child(5) .shell-text{
+        font-size: 2.4rem;
+        line-height: 1.6;
+    }
+
 }
 
 /*DT*/
 @media (max-width : 432px) {
     .events {
         width: 340px;
+        margin-top: 60px;
+    }
+    .selec7_heading::after{
+        width: 100px;
     }
     .events-shell {
-
+        margin-top: 40px;
         justify-content: center;
-
         display: flex;
         flex-direction: column;
-        width: 330px;   
-        
-
+        width: 340px;
+        gap: 20px;
     }
-
     .shell {
         width: 340px;
-        margin-bottom: 20px;
-        
+        height: 400px;
+    }
+    .shell img{
+        height: 200px;
+    }
+    .shell_heading{
+        margin-top: 20px;
+        font-size: 2.6rem;
+    }
+    .shell-text{
+        font-size: 2rem;
+        line-height: 1.8;
     }
 }
 
 /* End Selection 7 */
 /* Footer */
- 
+
 .bg-footer {
     width: 100%;
     background-color: #f0ece4;
@@ -1552,10 +1602,10 @@ body {
     text-align: center;
 }
 
-.logo-footer img{
+.logo-footer img {
     width: 60%;
     height: 60%;
-    object-fit:cover;
+    object-fit: cover;
 
 
 }
@@ -1700,43 +1750,55 @@ body {
         margin: 0 auto;
         height: auto;
     }
+
     .footer-up {
         gap: 10px;
     }
+
     .footer-heading {
         font-size: 1.7rem;
     }
-    .social-media a{
+
+    .social-media a {
         font-size: 1.5rem;
     }
 }
+
 /*MINI TABLET*/
 @media (min-width : 433px) and (max-width : 814px) {
     .footer {
         width: 690px;
         margin: 0 auto;
     }
+
     .footer-up {
         gap: 10px;
     }
+
     .footer-heading {
         font-size: 1.7rem;
     }
-    .social-media a{
+
+    .social-media a {
         font-size: 1.5rem;
     }
 }
 
 /*DT*/
 @media (max-width : 432px) {
+    .bg-footer{
+        margin-top: 50px;
+    }
     .footer {
         width: 340px;
-        margin: 0 auto;
-        height: auto;
+        margin: auto;
+        height: auto;        margin-top: 50px;
     }
+
     .footer-up {
         gap: 5px;
     }
+
     .logo-footer {
         display: none;
     }
@@ -1762,10 +1824,12 @@ body {
         margin-right: 10px;
         font-size: 1.4rem;
 
-    }  
-    .btn-feedback-footer button, .btn-map button {
+    }
+
+    .btn-feedback-footer button,
+    .btn-map button {
         font-size: 1rem;
-    } 
+    }
 
 }
 
