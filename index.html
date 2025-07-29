@@ -5,7 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huế Có Chi </title>
+    <link rel="stylesheet" href="../Assest/Css/Style.css">
 </head>
+
+<script>
+  let index6 = 0;
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const slides6 = document.getElementById("slideContainer_6");
+    const totalSlides6 = slides6.children.length;
+    let autoSlideInterval;
+
+    function showSlide6(i) {
+      index6 = (i + totalSlides6) % totalSlides6;
+      slides6.style.transform = `translateX(-${index6 * 100}%)`;
+    }
+
+    function next() {
+      showSlide6(index6 + 1);
+      pauseAutoSlide();
+    }
+
+    function prev() {
+      showSlide6(index6 - 1);
+      pauseAutoSlide();
+    }
+
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(() => {
+        showSlide6(index6 + 1);
+      }, 5000);
+    }
+
+    function pauseAutoSlide() {
+      clearInterval(autoSlideInterval);
+      setTimeout(startAutoSlide, 8000);
+    }
+
+    startAutoSlide();
+
+    window.next = next;
+    window.prev = prev;
+  });
+</script>
+
 
 <body>
     <!-- Header -->
@@ -16,11 +59,209 @@
     <!-- End Selection 2 -->
     <!-- Selection 3 -->
     <!-- End Selection 3 -->
-    <!-- Selection 4 -->
-    <!-- End Selection 4 -->
-    <!-- Selection 5 -->
-    <!-- End Selection 5 -->
+    <section class="Selection_4" >
+        <div class="title_4">
+            <p>ẨM THỰC HUẾ</p>
+        </div>
+        <div class="short-line"></div>
+        <div class="content_4">
+            <div class="content_4_1">
+                <div class="content_4_box">
+                    <img src="../Assest/Images/3_Am_Thuc/Bánh bèo.jpg" alt="#">
+                    <div class="text_4_1">
+                      <p>Món ăn truyền thống Huế, có từ thời cung đình. Những chiếc bánh nhỏ, mềm mịn, nhân tôm cháy,
+                         ăn kèm nước mắm ngọt. Bánh bèo thể hiện sự khéo léo, tinh xảo và thanh tao trong văn hóa ẩm thực Huế.</p>
+                    </div>
+                    <div class="text_4">
+                    <p>BÁNH BÈO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content_4_2">
+                <div class="content_4_box">
+                    <img src="/Assest/Images/3_Am_Thuc/Cơm hến.jpg" alt="#">
+                    <div class="text_4_1">
+                        <p>Xuất hiện từ các làng ven sông Hương, là món ăn dân dã của người lao động. Cơm hến gồm cơm nguội,
+                             hến xào, rau sống và mắm ruốc, phản ánh sự sáng tạo và tiết kiệm trong ẩm thực của người Huế xưa.</p>
+                    </div>
+                    <div class="text_4">
+                        <p>CƠM HẾN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content_4_3">
+                <div class="content_4_box_1">
+                    <img src="../Assest/Images/3_Am_Thuc/Bún bò huế.jpg" alt="#">
+                    <div class="text_4_1">
+                        <p class="text_4_1_1">Có nguồn gốc từ thời nhà Nguyễn, là món ăn cung đình kết hợp hài hòa giữa vị cay nồng, 
+                            thơm mùi sả và nước dùng đậm đà. Bún bò Huế thể hiện sự tinh tế và đậm chất văn hóa ẩm thực xứ kinh kỳ.</p>
+                    </div>
+                    <div class="text_4">
+                    <p>BÚN BÒ HUẾ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content_4_4">
+                <div class="content_4_box">
+                    <img src="../Assest/Images/3_Am_Thuc/Chè Cung Đình.jpg" alt="#">
+                    <div class="text_4_1">
+                        <p>
+                            Là món tráng miệng trong hoàng cung triều Nguyễn, gồm nhiều loại như chè hạt sen, đậu ngự, nhãn nhục,... 
+                            Chè cung đình mang tính chất bồi bổ, thanh mát, phản ánh sự cầu kỳ và sang trọng trong ẩm thực cung đình.
+                        </p>
+                    </div>
+                    <div class="text_4">
+                    <p>CHÈ CUNG ĐÌNH</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content_4_5">
+                <div class="content_4_box">
+                    <img src="../Assest/Images/3_Am_Thuc/Trà Cung ĐÌnh.jpg" alt="#">
+                    <div class="text_4_1">
+                        <p>Có từ thời vua chúa Nguyễn, phối từ nhiều loại thảo dược quý như hoa cúc, cam thảo, sen,... 
+                            Trà không chỉ là thức uống mà còn mang tính dưỡng sinh, thanh lọc cơ thể, thể hiện triết lý sống hài hòa của người xưa.</p>
+                    </div>
+                    <div class="text_4">
+                    <p>TRÀ CUNG ĐÌNH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="selection_5">
+        <div class="title_5">
+            <p>NGHỆ THUẬT</p>
+        </div>
+        <div class="short-line"></div>
+        <div class="background_5">
+        </div>
+        <div class="content_5">
+            <div class="content_5_1">
+                <div class="content_5_box">
+                    <img src="../Assest/Images/4_Nghe_Thuat/nha-nhac-cung-dinh-hue.jpg" alt="#">
+                </div>
+                <div class="text_5">
+                    <a href="#">Nhã nhạc Cung Đình Huế</a>
+                </div>
+                <div class="text_5_1">
+                    <p>Âm nhạc trang nghiêm của triều Nguyễn, biểu diễn trong lễ nghi, mang giá trị văn hóa đặc sắc.</p>
+                </div>
+            </div>
+            <div class="content_5_2">
+                <div class="content_5_box">
+                    <img src="../Assest/Images/4_Nghe_Thuat/ca-hue-song-huong.jpg" alt="#">
+                </div>
+                <div class="text_5">
+                    <a href="#">Ca Huế trên sông Hương</a>
+                </div>
+                <div class="text_5_1">
+                    <p>Dân ca truyền thống trữ tình, vang lên trên thuyền rồng giữa dòng Hương, đậm chất thơ và sâu lắng.</p>
+                </div>
+            </div>
+            <div class="content_5_3">
+                <div class="content_5_box">
+                    <img src="../Assest/Images/4_Nghe_Thuat/vu-khuc-cung-dinh.jpg" alt="#">
+                </div>
+                <div class="text_5">
+                    <a href="#">Vũ khúc Cung Đình</a>
+                </div>
+                <div class="text_5_1">
+                    <p>Điệu múa cung đình thanh thoát, biểu diễn trong đại lễ, thể hiện vẻ đẹp uyển chuyển và quý phái.</p>
+                </div>
+            </div>
+            <div class="content_5_4">
+                <div class="content_5_box">
+                    <img src="../Assest/Images/4_Nghe_Thuat/tuong-hue.jpg" alt="#">
+                </div>
+                <div class="text_5">
+                    <a href="#">Tuồng Huế</a>
+                </div>
+                <div class="text_5_1">
+                    <p>Loại hình sân khấu cổ, mang đậm dấu ấn cung đình, với trang phục, lời ca, động tác đầy khí chất quyền quý.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Selection 6 -->
+    <section class="selection_6">
+        <div class="title_6">
+            <p>ĐIỂM ĐẾN - DU LỊCH</p>
+        </div>
+        <div class="short-line"></div>
+        <div class="slider_6">
+            <div class="slides_6" id="slideContainer_6">
+                <div class="slide_6">
+                    <img src="../Assest/Images/5_Diem_den/chua-thien-mu.jpg" />
+                    <div class="overlay"></div>
+                    <div class="caption_6">
+                        <h2>Chùa Thiên Mụ</h2>
+                        <p>Ngôi chùa cổ linh thiêng bên sông Hương, biểu tượng tâm linh và kiến trúc Phật giáo xứ Huế.</p>
+                    </div>
+                </div>
+                <div class="slide_6">
+                    <img src="/Assest/Images/5_Diem_den/cau-truong-tien-hue.jpg" />
+                    <div class="overlay"></div>
+                    <div class="caption_6">
+                        <h2>Cầu Trường Tiền</h2>
+                        <p>Cây cầu biểu tượng bắc qua sông Hương, thiết kế Pháp, gắn liền với đời sống người Huế.</p>
+                    </div>
+                </div>
+                <div class="slide_6">
+                    <img src="../Assest/Images/5_Diem_den/dai-noi-hue.jpg" />
+                    <div class="overlay"></div>
+                    <div class="caption_6">
+                        <h2>Đại Nội Huế</h2>
+                        <p>Kinh thành triều Nguyễn, trung tâm chính trị, văn hóa, kiến trúc cung đình đặc sắc của cố đô Huế.</p>
+                    </div>
+                </div>
+                <div class="slide_6">
+                    <img src="../Assest/Images/5_Diem_den/dam-lap-an.jpg" />
+                    <div class="overlay"></div>
+                    <div class="caption_6">
+                        <h2>Đầm Lập An</h2>
+                        <p>Đầm nước mặn tuyệt đẹp ở Lăng Cô, nổi bật với khung cảnh mây trời, núi non soi bóng.</p>
+                    </div>
+                </div>
+                <div class="slide_6">
+                    <img src="../Assest/Images/5_Diem_den/doi-vong-canh.jpg" />
+                    <div class="overlay"></div>
+                    <div class="caption_6">
+                        <h2>Đồi Vọng Cảnh</h2>
+                        <p>Đồi cao nhìn toàn cảnh sông Hương, lăng tẩm, thiên nhiên nên thơ gắn liền vẻ đẹp xứ Huế.</p>
+                    </div>
+                </div>
+                <div class="slide_6">
+                    <img src="../Assest/Images/5_Diem_den/lang-khai-dinh.jpg" />
+                    <div class="overlay"></div>
+                    <div class="caption_6">
+                        <h2>Lăng Khải Định</h2>
+                        <p>Lăng vua pha trộn kiến trúc Đông - Tây tinh xảo, nổi bật với nghệ thuật trang trí tinh vi.</p>
+                    </div>
+                </div>
+                <div class="slide_6">
+                    <img src="../Assest/Images/5_Diem_den/lang-tu-duc.jpg" />
+                    <div class="overlay"></div>
+                    <div class="caption_6">
+                        <h2>Lăng Tự Đức</h2>
+                        <p>Lăng vua thơ mộng giữa thiên nhiên, phản ánh tâm hồn thi sĩ và cuộc đời vua Tự Đức.</p>
+                    </div>
+                </div>
+                <div class="slide_6">
+                    <img src="../Assest/Images/5_Diem_den/pha-tam-giang.jpg" />
+                    <div class="overlay"></div>
+                    <div class="caption_6">
+                        <h2>Phá Tam Giang</h2>
+                        <p>Đầm phá lớn nhất Đông Nam Á, nổi tiếng với cảnh hoàng hôn huyền ảo và đời sống chài lưới.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="controls_6">
+                <button onclick="prev()">❮</button>
+                <button onclick="next()">❯</button>
+            </div>
+        </div>
+    </section>
     <!-- End Selection 6 -->
     <!-- Selection 7 -->
     <!-- End Selection 7 -->
