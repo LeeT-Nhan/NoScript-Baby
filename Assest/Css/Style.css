@@ -10,6 +10,7 @@ html {
     /* Mặc định font-size ở html là 16px
                 khi đổi 62,5 thì sẽ thành 10px => 1 rem = 10px */
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -24,7 +25,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 815px;
+    height: 715px;
 }
 
 .header_overlay {
@@ -246,7 +247,9 @@ body {
     .full-container.navbar-overlay {
         height: 420px;
     }
-
+    .container{
+        margin-top: 30px;
+    }
     .menu {
         width: 910px;
     }
