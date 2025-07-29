@@ -17,8 +17,11 @@ html{
 /* Selection 3 */
 /* End Selection 3 */
 .Selection_4 {
-    width: 1400px;
-    margin: 100px auto 0; 
+    max-width: 1400px;
+    width: 100%;
+    margin: 100px auto 0;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .title_4 {
@@ -244,7 +247,7 @@ html{
 }
 
 /*Tablet*/
-@media (min-width: 815px) and (max-width: 820px) {
+@media (min-width: 815px) and (max-width: 1024px) {
   .Selection_4 {
     width: 100%;
     max-width: 800px;
@@ -388,6 +391,20 @@ html{
     border-radius: 35px;
     display: block;
   }
+  .text_4 {
+    font-size: 1.6rem;
+    bottom: 12px;
+    text-align: center;
+  }
+
+  .text_4_1 {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .text_4_1_1 {
+    font-size: 2.4rem;
+  }
 }
 
 
@@ -395,7 +412,7 @@ html{
 @media (max-width: 432px) {
   .content_4 {
     display: grid;
-    grid-template-columns: repeat(2, 155px); /* 2 cột mỗi cột ~155px */
+    grid-template-columns: repeat(2, 155px); 
     grid-template-rows: auto;
     gap: 20px;
     justify-content: center;
@@ -441,7 +458,7 @@ html{
   }
 
   .content_4_3 .content_4_box_1 {
-    height: 310px; /* ảnh lớn cao gấp đôi */
+    height: 310px; 
   }
 
   .content_4_box img,
@@ -454,18 +471,18 @@ html{
   }
 
   .text_4 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-top: 8px;
   }
 
   .text_4_1 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 0.8rem;
   }
 
   .text_4_1_1 {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -478,7 +495,6 @@ html{
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
 }
 
 .title_5 {
@@ -516,11 +532,13 @@ html{
 
 .content_5 {
   display: flex;
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .content_5 > div {
@@ -564,7 +582,6 @@ html{
   font-size: 20px;
   color: #333;
   margin: 15px 15px 0;
-  line-height: 1.4;
   text-align: justify;
   font-weight: bold;
 }
@@ -580,6 +597,151 @@ html{
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 816px) {
+  .content_5 {
+    width: 750px;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .content_5 > div {
+    width: 355px;
+    max-width: 100%;
+  }
+
+  .text_5 {
+    font-size: 22px;
+  }
+
+  .text_5_1 {
+    font-size: 18px;
+  }
+}
+
+/* Mini‑tablet*/
+@media (max-width: 815px) and (min-width: 451px) {
+  .content_5 {
+    display: grid;                    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 690px;                     
+    justify-content: center;
+  }
+
+  .content_5 > div {
+    width: auto;                      
+    max-width: none;
+  }
+
+  .content_5_box img {
+    width: 100%;                      
+    height: 180px;                   
+    object-fit: cover;
+    padding: 0 10px 0 10px ;
+  }
+
+  .text_5 {
+    font-size: 20px;
+  }
+
+  .text_5_1 {
+    font-size: 17px;
+  }
+  .background_5 {
+    display: block;
+    position: absolute;
+    top: 250px; 
+    left: 0;
+    width: 100%;
+    height: 180px;
+    background-image: url('/Assest/Images/4_Nghe_Thuat/BG_ sóng.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.8;
+  }
+
+  .selection_5 {
+    position: relative;
+  }
+
+  .title_5,
+  .content_5 {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  .selection_5 {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .content_5 {
+    display: grid;                    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;                        
+    width: 100%;
+    max-width: 360px;                 
+    margin-top: 24px;
+    padding: 0 8px;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .content_5 > div {
+    width: auto;
+    max-width: initial;
+  }
+
+  .content_5_box img {
+    width: 100%;
+    height: 150px;                    
+    object-fit: cover;
+    padding: 0 10px 0 10px;
+  }
+
+  .text_5 {
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .text_5_1 {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .background_5 {
+    display: block;
+    position: absolute;
+    top: 350px; 
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-image: url('/Assest/Images/4_Nghe_Thuat/BG_ sóng.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.8;
+  }
+
+  .selection_5 {
+    position: relative;
+  }
+
+  .title_5,
+  .content_5 {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+
 
 /* End Selection 5 */
 /* Selection 6 */
