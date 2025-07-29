@@ -95,12 +95,12 @@ body {
     background-image: linear-gradient(90deg, transparent, #ff6ec7, #4c74d9, #00e0ff, transparent);
     top: 0;
     left: 0;
-    transform: scale(0);
+    transform: scaleX(0);
     transition: all 0.3s ease-in-out;
 }
 
 .list_item:hover::before {
-    transform: scale(1);
+    transform: scaleX(1)
 }
 
 .nav-link {
@@ -375,12 +375,12 @@ body {
     }
 
     .container {
-        width: 400px;
+        width: 90%;
         background-color: #f0ece4;
         border-radius: 35px;
 
         top: 5px;
-        height: 40px;
+        height: 50px;
         display: flex;
         justify-content: space-between;
         padding: 0 35px;
@@ -397,7 +397,7 @@ body {
     }
 
     .menu-logo-responsive img {
-        width: 40px;
+        width: 50px;
         height: auto;
     }
 
@@ -409,9 +409,8 @@ body {
         gap: 10px;
     }
 
-    .btn-feedback-responsive>button {
-        width: 100px;
-        font-size: 1.2rem;
+    .btn-feedback-responsive button {
+        width: 90px;
     }
 
     .hues-logo img {
@@ -1599,7 +1598,7 @@ body {
 
 .logo-footer {
     width: 25%;
-    text-align: center;
+    text-align: left;
 }
 
 .logo-footer img {
@@ -1617,10 +1616,11 @@ body {
 
 .footer-heading {
     color: #78489c;
+    font-family: roboto;
 }
 
 .underline {
-    border: gray solid 3px;
+    border: gray solid 2px;
     width: 50%;
     margin: 10px 0 20px 0;
 }
@@ -1647,6 +1647,7 @@ body {
 }
 
 .social-media a {
+    font-family: roboto;
     color: #333;
     margin-right: 20px;
     font-size: 2.5rem;
@@ -1701,7 +1702,7 @@ body {
 
 .btn-map button {
     background-color: greenyellow;
-    color: #fff;
+    
     border: none;
     padding: 10px 0 10px 0;
     border-radius: 10px;
@@ -1713,7 +1714,10 @@ body {
     width: 100%;
     max-height: 50px;
 }
-
+.btn-map a {
+    text-decoration: none;
+    color: #fff;
+}
 .btn-map button:hover {
     background-color: rgb(158, 247, 24);
 }
@@ -1722,6 +1726,7 @@ body {
     border: #333 solid 4px;
     border-style: dashed;
     border-radius: 15px;
+    width: 100%;
 }
 
 .location img {
@@ -1734,12 +1739,11 @@ body {
 .footer-down {
     border-top: #333 solid 2px;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .footer-down p {
     margin-top: 10px;
-
+    margin-bottom: 10px;
 }
 
 /*Menu cua Tablet*/
@@ -1754,7 +1758,9 @@ body {
     .footer-up {
         gap: 10px;
     }
-
+    .logo-footer img {
+        width: 100%;
+    }
     .footer-heading {
         font-size: 1.7rem;
     }
