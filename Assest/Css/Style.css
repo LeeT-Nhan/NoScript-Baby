@@ -9,6 +9,7 @@ html {
     font-size: 62.5%;
     /* Mặc định font-size ở html là 16px
                 khi đổi 62,5 thì sẽ thành 10px => 1 rem = 10px */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -35,7 +36,10 @@ body {
 }
 
 .container {
-    position: relative;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
     z-index: 2;
     max-width: 1400px;
     margin: auto;
@@ -778,6 +782,7 @@ body {
 .selec2_text-box,
 .selec2_form {
     width: 100%;
+    z-index: 1;
 }
 
 .selec2_text-box {
@@ -1069,10 +1074,12 @@ body {
         flex-direction: column;
         gap: 20px;
     }
+
     .selec2_text-box,
     .selec2_form {
         width: 100%;
     }
+
     .selec2_text-box_heading {
         font-size: 2rem;
     }
@@ -1457,25 +1464,29 @@ body {
     .shell_heading {
         font-size: 2rem;
     }
-    .shell-text{
+
+    .shell-text {
         font-size: 1.6rem;
         line-height: 1.6;
     }
+
     .shell:nth-child(4) .shell_heading,
     .shell:nth-child(5) .shell_heading {
         font-size: 2.6rem;
     }
+
     .shell:nth-child(4) .shell-heading-back,
     .shell:nth-child(5) .shell-heading-back {
         font-size: 2.6rem;
     }
 
     .shell:nth-child(4) .shell_sch,
-    .shell:nth-child(5) .shell_sch{
+    .shell:nth-child(5) .shell_sch {
         font-size: 2rem;
     }
+
     .shell:nth-child(4) .shell-text,
-    .shell:nth-child(5) .shell-text{
+    .shell:nth-child(5) .shell-text {
         font-size: 2.4rem;
         line-height: 1.6;
     }
@@ -1507,34 +1518,40 @@ body {
         height: 400px;
         /* hoặc 45% nếu muốn lớn hơn */
     }
+
     .shell:nth-child(4) img,
     .shell:nth-child(5) img {
         height: 200px;
     }
+
     .shell-heading-back,
     .shell_heading {
         font-size: 1.8rem;
     }
-    .shell-text{
+
+    .shell-text {
         font-size: 1.5rem;
         line-height: 1.6;
     }
+
     .shell:nth-child(4) .shell_heading,
     .shell:nth-child(5) .shell_heading {
         font-size: 2.6rem;
         margin-top: 20px;
     }
+
     .shell:nth-child(4) .shell-heading-back,
     .shell:nth-child(5) .shell-heading-back {
         font-size: 2.6rem;
     }
 
     .shell:nth-child(4) .shell_sch,
-    .shell:nth-child(5) .shell_sch{
+    .shell:nth-child(5) .shell_sch {
         font-size: 2rem;
     }
+
     .shell:nth-child(4) .shell-text,
-    .shell:nth-child(5) .shell-text{
+    .shell:nth-child(5) .shell-text {
         font-size: 2.4rem;
         line-height: 1.6;
     }
@@ -1547,9 +1564,11 @@ body {
         width: 340px;
         margin-top: 60px;
     }
-    .selec7_heading::after{
+
+    .selec7_heading::after {
         width: 100px;
     }
+
     .events-shell {
         margin-top: 40px;
         justify-content: center;
@@ -1558,18 +1577,22 @@ body {
         width: 340px;
         gap: 20px;
     }
+
     .shell {
         width: 340px;
         height: 400px;
     }
-    .shell img{
+
+    .shell img {
         height: 200px;
     }
-    .shell_heading{
+
+    .shell_heading {
         margin-top: 20px;
         font-size: 2.6rem;
     }
-    .shell-text{
+
+    .shell-text {
         font-size: 2rem;
         line-height: 1.8;
     }
@@ -1702,7 +1725,7 @@ body {
 
 .btn-map button {
     background-color: greenyellow;
-    
+
     border: none;
     padding: 10px 0 10px 0;
     border-radius: 10px;
@@ -1714,10 +1737,12 @@ body {
     width: 100%;
     max-height: 50px;
 }
+
 .btn-map a {
     text-decoration: none;
     color: #fff;
 }
+
 .btn-map button:hover {
     background-color: rgb(158, 247, 24);
 }
@@ -1758,9 +1783,11 @@ body {
     .footer-up {
         gap: 10px;
     }
+
     .logo-footer img {
         width: 100%;
     }
+
     .footer-heading {
         font-size: 1.7rem;
     }
@@ -1792,13 +1819,15 @@ body {
 
 /*DT*/
 @media (max-width : 432px) {
-    .bg-footer{
+    .bg-footer {
         margin-top: 50px;
     }
+
     .footer {
         width: 340px;
         margin: auto;
-        height: auto;        margin-top: 50px;
+        height: auto;
+        margin-top: 50px;
     }
 
     .footer-up {
