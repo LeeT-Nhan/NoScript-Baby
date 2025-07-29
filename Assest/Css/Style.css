@@ -1617,6 +1617,7 @@ body {
 .footer-up {
     display: flex;
     margin-top: 4%;
+    justify-content: space-between;
 }
 
 .logo-footer {
@@ -1625,8 +1626,8 @@ body {
 }
 
 .logo-footer img {
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
 
 
@@ -1640,10 +1641,11 @@ body {
 .footer-heading {
     color: #78489c;
     font-family: roboto;
+    font-size: 2.4rem;
 }
 
 .underline {
-    border: gray solid 2px;
+    border: gray solid 1px;
     width: 50%;
     margin: 10px 0 20px 0;
 }
@@ -1659,6 +1661,7 @@ body {
 .footer-content a {
     text-decoration: none;
     color: #333;
+    font-size: 1.4rem
 }
 
 .footer-content i {
@@ -1762,7 +1765,7 @@ body {
 }
 
 .footer-down {
-    border-top: #333 solid 2px;
+    border-top: #333 solid;
     margin-top: 30px;
 }
 
@@ -1785,15 +1788,21 @@ body {
     }
 
     .logo-footer img {
-        width: 100%;
+        width: 80%;
+        height: 80%;
     }
 
     .footer-heading {
         font-size: 1.7rem;
     }
-
+    .footer-content a{
+        font-size: 1.2rem;
+    }
     .social-media a {
         font-size: 1.5rem;
+    }
+    .btn-map a{
+        font-size: 1.2rem;
     }
 }
 
@@ -1803,7 +1812,12 @@ body {
         width: 690px;
         margin: 0 auto;
     }
-
+    .logo-footer {
+        display: none;
+    }
+    .map, .quick-access, .info {
+        width: 33.33%;
+    }
     .footer-up {
         gap: 10px;
     }
@@ -1811,7 +1825,9 @@ body {
     .footer-heading {
         font-size: 1.7rem;
     }
-
+    .footer-content a{
+        font-size: 1.2rem;
+    }
     .social-media a {
         font-size: 1.5rem;
     }
@@ -1831,7 +1847,8 @@ body {
     }
 
     .footer-up {
-        gap: 5px;
+      gap: 20px;
+        flex-wrap: wrap;
     }
 
     .logo-footer {
@@ -1839,21 +1856,25 @@ body {
     }
 
     .info {
-        width: 33.33%;
+        width: 47%;
     }
 
     .quick-access {
-        width: 33.33%;
+        width: 47%;
     }
 
     .map {
-        width: 33.33%;
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 15px;
     }
 
     .footer-heading {
-        font-size: 1.0rem;
+        font-size: 1.5rem;
     }
-
+    .footer-content a {
+        font-size: 1rem;
+    }
     .social-media a {
         color: #333;
         margin-right: 10px;
