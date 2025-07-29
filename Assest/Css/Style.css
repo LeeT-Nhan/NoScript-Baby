@@ -825,6 +825,7 @@ html{
   margin: auto;
   overflow: hidden;
   position: relative;
+  margin-top:100px;
 }
 
 .slides_6 {
@@ -841,8 +842,11 @@ html{
 
 .slide_6 img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
+
 
 .overlay {
   position: absolute;
@@ -857,12 +861,13 @@ html{
 .caption_6 {
   position: absolute;
   z-index: 2;
-  bottom: 5px;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  padding: 20px;
-  max-width: 90%;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -880,8 +885,9 @@ html{
   font-size: 26px;
   line-height: 1.6;
   color: black;
-  width:800px;
-  text-align: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .controls_6 {
@@ -902,6 +908,110 @@ html{
   font-size: 24px;
   cursor: pointer;
 }
+
+/* Tablet*/
+@media (max-width: 1024px) and (min-width: 816px) {
+  .selection_6 {
+    margin: 80px auto;
+    padding: 0 20px 0 20px;
+  }
+
+  .slide_6 {
+    height: 400px;
+  }
+
+  .title_6 {
+    font-size: 3rem;
+  }
+
+  .caption_6 h2 {
+    font-size: 26px;
+  }
+
+  .caption_6 p {
+    font-size: 22px;
+    width: 700px;
+  }
+
+  .controls_6 button {
+    font-size: 22px;
+    padding: 8px 12px;
+  }
+}
+
+
+/* Mini-tablet*/
+@media (max-width: 815px) and (min-width: 451px) {
+  .selection_6 {
+    margin: 70px auto;
+    padding: 0 20px 0 20px;
+  }
+
+  .slide_6 {
+    height: 320px;
+  }
+
+  .title_6 {
+    font-size: 2.4rem;
+  }
+
+  .caption_6 h2 {
+    font-size: 22px;
+  }
+
+  .caption_6 p {
+    font-size: 18px;
+    width: 100%;
+    width:630px;
+  }
+
+  .controls_6 button {
+    font-size: 20px;
+    padding: 6px 10px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 450px) {
+  .selection_6 {
+    margin: 60px auto;
+    padding: 0 20px 0 20px;
+  }
+
+  .slider_6 {
+    margin-top:40px;
+  }
+
+  .slide_6 {
+    height: 250px;
+  }
+
+  .title_6 {
+    font-size: 3rem;
+  }
+
+  .caption_6 h2 {
+    font-size: 18px;
+  }
+
+  .caption_6 p {
+    font-size: 16px;
+    width: 360px;
+  }
+
+  .caption_6 {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .controls_6 button {
+    font-size: 18px;
+    padding: 5px 8px;
+  }
+}
+
+
 
 
 

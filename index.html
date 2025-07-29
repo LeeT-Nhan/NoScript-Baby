@@ -9,44 +9,57 @@
 </head>
 
 <script>
-  let index6 = 0;
+let index6 = 0;
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const slides6 = document.getElementById("slideContainer_6");
-    const totalSlides6 = slides6.children.length;
-    let autoSlideInterval;
+document.addEventListener("DOMContentLoaded", function () {
+  const slides6 = document.getElementById("slideContainer_6");
+  const totalSlides6 = slides6.children.length;
 
-    function showSlide6(i) {
-      index6 = (i + totalSlides6) % totalSlides6;
-      slides6.style.transform = `translateX(-${index6 * 100}%)`;
-    }
+  let autoSlideInterval = null;
+  let pauseTimeout = null;
 
-    function next() {
-      showSlide6(index6 + 1);
-      pauseAutoSlide();
-    }
+  function showSlide6(i) {
+    index6 = (i + totalSlides6) % totalSlides6;
+    slides6.style.transform = `translateX(-${index6 * 100}%)`;
+  }
 
-    function prev() {
-      showSlide6(index6 - 1);
-      pauseAutoSlide();
-    }
+  function next() {
+    showSlide6(index6 + 1);
+    pauseAutoSlide(); 
+  }
 
-    function startAutoSlide() {
-      autoSlideInterval = setInterval(() => {
-        showSlide6(index6 + 1);
-      }, 5000);
-    }
+  function prev() {
+    showSlide6(index6 - 1);
+    pauseAutoSlide();
+  }
 
-    function pauseAutoSlide() {
-      clearInterval(autoSlideInterval);
-      setTimeout(startAutoSlide, 8000);
-    }
+  function startAutoSlide() {
+    stopAutoSlide(); 
+    autoSlideInterval = setInterval(() => {
+      showSlide6(index6 + 1); 
+    }, 3000);
+  }
 
-    startAutoSlide();
+  function stopAutoSlide() {
+    if (autoSlideInterval) clearInterval(autoSlideInterval);
+    autoSlideInterval = null;
+  }
 
-    window.next = next;
-    window.prev = prev;
-  });
+  function pauseAutoSlide() {
+    stopAutoSlide();
+    if (pauseTimeout) clearTimeout(pauseTimeout);
+    pauseTimeout = setTimeout(() => {
+      startAutoSlide();
+    }, 8000); 
+  }
+
+  showSlide6(index6);
+  startAutoSlide();
+
+  window.next = next;
+  window.prev = prev;
+});
+
 </script>
 
 
