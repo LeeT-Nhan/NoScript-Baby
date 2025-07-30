@@ -1517,6 +1517,9 @@ button.next {
         width: 390px;
         margin-top: 50px;
     }
+    .selec6_heading::after{
+        width: 100px;
+    }
     .selec6_body{
         width:390px;
         height:260px;
