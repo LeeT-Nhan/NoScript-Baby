@@ -2078,6 +2078,45 @@ button.next {
     transform: rotateY(180deg);
 }
 
+/* Hiệu ứng ánh sáng chạy trên mặt sau */
+.back::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  border-radius: 35px;
+  z-index: 1;
+  background-size: 200% 100%;
+  background-position: -200% 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Kích hoạt hiệu ứng khi hover thẻ */
+.shell:hover .back::after {
+  opacity: 1;
+  animation: sweep 1s ease-out forwards;
+}
+
+/* Keyframes cho ánh sáng chạy từ trái sang phải */
+@keyframes sweep {
+  from {
+    background-position: -200% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+
 /* Ảnh */
 .shell-pic {
     position: relative;
